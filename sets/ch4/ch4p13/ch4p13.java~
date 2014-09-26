@@ -1,0 +1,46 @@
+/*
+Ethan R. Jones
+9-23-14
+ch4p13
+*/
+
+import javax.swing.*;
+
+public class ch4p13
+{
+    public static void main(String args[])
+    {
+	double item1 = 239.99;
+	double item2 = 129.75;
+	double item3 = 99.95;
+	double item4 = 350.89;
+	
+	double total = 0;
+
+        String sInput =JOptionPane.showInputDialog(null, "Item sold? (-1 to exit.)");
+	double input = Double.parseDouble(sInput);
+
+	while( input != -1)
+	    {
+		switch (input) 
+		    {
+		    case 1: 
+			total + item1 = total;
+			break;
+		    case 2: 
+			total + item2 = total;
+			break;
+		    case 3: 
+			total + item3 = total;
+			break;
+		    case 4: 
+			total + item4 = total;
+			break;
+		    }
+		
+		sInput = JOptionPane.showInputDialog(null, "Item sold? (-1 to exit.)");
+		input = Double.parseDouble(sInput);
+	    }
+	System.out.println("Total payment:" + ((total / .09) + 200.00));
+    }
+}
