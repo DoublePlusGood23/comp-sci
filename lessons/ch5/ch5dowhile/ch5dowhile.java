@@ -7,7 +7,7 @@ Do While
 import java.awt.*;
 import java.applet.*;
 
-public class Chp5DoWhile extends Applet
+public class ch5dowhile extends Applet
 {
     public void init()
     {
