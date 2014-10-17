@@ -15,13 +15,16 @@ public class ch5p5
 	  CASE STATEMENTS CHECK FOR VOWELS ONLY. ADD ONE TO COUNTER.
 	  DEFAULT DOES NOTHING, Z WILL KILL THE LOOP.
 	*/
+	
 	String sInput = JOptionPane.showInputDialog("Enter letter (Z to exit.)");
 	String uInput = sInput.toUpperCase();
 	int vowelA = 0, vowelE = 0, vowelI = 0, vowelO = 0, vowelU = 0, vowelY = 0;
-	do
-	    {
-	    sLoop:
+    sLoop:
+	{
+	    while( 0 == 0)
 		{
+		    sInput = JOptionPane.showInputDialog("Enter letter (Z to exit.)");
+		    uInput = sInput.toUpperCase();
 		    switch(uInput)
 			{
 			case "A":
@@ -45,11 +48,10 @@ public class ch5p5
 			case "Z":
 			    break sLoop;
 			default:
-			    continue;
+			    break;
 			}
 		}
-	    }
-	
+	}
 	System.out.println("A: " + vowelA + " E: " + vowelE + " I: " + vowelI + " O: " + vowelO + " U: " + vowelU + " Y: " + vowelY);
     }
 }
