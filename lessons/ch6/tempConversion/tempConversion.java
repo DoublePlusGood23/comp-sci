@@ -1,7 +1,7 @@
 /*
-Ethan R. Jones
-10-29-2014
-Temp Conversion
+  Ethan R. Jones
+  10-29-2014
+  Temp Conversion
 */
 
 import java.awt.*; // Container (Graphics.)
@@ -11,7 +11,7 @@ import java.awt.event.*; // Action listener
 
 public class tempConversion extends JApplet implements ActionListener // ActionListener lets JButton trigger events 
 {
-
+    
     JLabel cLabel, fLabel;
     JTextField cField, fField;
     
@@ -31,7 +31,7 @@ public class tempConversion extends JApplet implements ActionListener // ActionL
 	
 	fLabel = new JLabel("Fahrenheit");
 	form1.add(fLabel);
-
+	
 	fField = new JTextField(10);
 	fField.addActionListener(this);
 	form1.add(fField);
@@ -40,12 +40,20 @@ public class tempConversion extends JApplet implements ActionListener // ActionL
     public void actionPerformed(ActionEvent e)
     {
 	if(e.getSource() == cField)
-	    {	
-		JOptionPane.showMessageDialog(null, "You hit enter on cField.");
+	    {
+		String c = cField.getText();
+	        double cNum = Double.parseDouble(c);
+		double fNum = (9.0 / 5.0) * cNum + 32;
+
+		fField.setText("" + fNum);
 	    }
 	else if(e.getSource() == fField)
 	    {
-		JOptionPane.showMessageDialog(null, "You hit enter on fField.");
+		String f = fField.getText();
+		double fNum = Double.parseDouble(f);
+		// double cNum = (fNum - 32) * 5.0 / 9.0;
+		
+		cField.setText("" + cNum);
 	    }
     }
 }
