@@ -1,7 +1,7 @@
 /*
   Ethan R. Jones
-  10-29-2014
-  Temp Conversion
+  11-5-2014
+  Calculate Charges
 */
 
 import java.awt.*; // Container (Graphics.)
@@ -9,12 +9,11 @@ import java.applet.*;
 import javax.swing.*; // JLabel, JTextField, JButton 
 import java.awt.event.*; // Action listener 
 
-public class tempConversion extends JApplet implements ActionListener // ActionListener lets JButton trigger events 
+public class ch6p8 extends JApplet implements ActionListener // ActionListener lets JButton trigger events 
 {
     
-    JLabel cLabel, fLabel;
-    JTextField cField, fField;
-    
+    JLabel oLabel, rLabel;
+    JTextField iField;
     
     public void init()
     {
@@ -22,38 +21,44 @@ public class tempConversion extends JApplet implements ActionListener // ActionL
 	Container form1 = getContentPane();
 	form1.setLayout(new FlowLayout());
 	
-	cLabel = new JLabel("Celsius");
-	form1.add(cLabel);
+	iField = new JTextField(10);
+	iField.addActionListener(this);
+	form1.add(iField);
 	
-	cField = new JTextField(10);
-	cField.addActionListener(this);
-	form1.add(cField);
-	
-	fLabel = new JLabel("Fahrenheit");
-	form1.add(fLabel);
-	
-	fField = new JTextField(10);
-	fField.addActionListener(this);
-	form1.add(fField);
+	oLabel = new JLabel("");
+	form1.add(oLabel);
+
+	/*
+	rLabel = new JLabel("Hello!");
+	form1.add(rLabel);
+	*/
+    }
+
+    public double calculateCharges(double i)
+    {
+	if(i <= 3.00)
+	    {
+		return 2.00;
+	    }
+	else
+	    {
+		i -= 3.0;
+		if( ((i * .50) + 2.00) <= 10.00)
+		    {
+			return ((i * .50) + 2.00);
+		    }
+		else
+		    {
+			return 10.00;
+		    }
+	    }
     }
     
     public void actionPerformed(ActionEvent e)
     {
-	if(e.getSource() == cField)
-	    {
-		String c = cField.getText();
-	        double cNum = Double.parseDouble(c);
-		double fNum = (9.0 / 5.0) * cNum + 32;
-
-		fField.setText("" + fNum);
-	    }
-	else if(e.getSource() == fField)
-	    {
-		String f = fField.getText();
-		double fNum = Double.parseDouble(f);
-		// double cNum = (fNum - 32) * 5.0 / 9.0;
-		
-		cField.setText("" + cNum);
-	    }
+	String i = iField.getText();
+	double total = calculateCharges(Math.ceil(Double.parseDouble(i)));
+	
+	oLabel.setText("Total Paid: "+ total);
     }
 }
