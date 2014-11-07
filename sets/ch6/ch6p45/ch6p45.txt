@@ -1,0 +1,1 @@
+During the recursive call it needs to subtract at least one from the parameter, otherwise it will just loop since it's the same value as originally used.
