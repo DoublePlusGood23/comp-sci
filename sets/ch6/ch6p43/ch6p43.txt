@@ -1,0 +1,2 @@
+If the second integer is equal to one, return the first integer,
+otherwise return the first integer plus mystery() with the first interger and the second integer minus one recursively until the second number is 1.
