@@ -12,8 +12,9 @@ import java.awt.event.*; // Action listener
 public class ch6p8 extends JApplet implements ActionListener // ActionListener lets JButton trigger events 
 {
     
-    JLabel oLabel, rLabel;
+    JLabel oLabel;
     JTextField iField;
+    JTextArea oArea;
     
     public void init()
     {
@@ -28,10 +29,8 @@ public class ch6p8 extends JApplet implements ActionListener // ActionListener l
 	oLabel = new JLabel("");
 	form1.add(oLabel);
 
-	/*
-	rLabel = new JLabel("Hello!");
-	form1.add(rLabel);
-	*/
+	oArea = new JTextArea();
+	form1.add(oArea);
     }
 
     public double calculateCharges(double i)
@@ -56,9 +55,7 @@ public class ch6p8 extends JApplet implements ActionListener // ActionListener l
     
     public void actionPerformed(ActionEvent e)
     {
-	String i = iField.getText();
-	double total = calculateCharges(Math.ceil(Double.parseDouble(i)));
-	
-	oLabel.setText("Total Paid: "+ total);
+	oArea.append(oLabel.getText() + "\n");
+	oLabel.setText("" + calculateCharges(Math.ceil(Double.parseDouble(iField.getText()))));
     }
 }
