@@ -14,7 +14,7 @@ public class ch6p37 extends JApplet implements ActionListener // ActionListener 
     
     JTextField iField;
     JTextArea oArea;
-    
+    JScrollPane oScroll;
     public void init()
     {
 	// Initionalizes all the Applet parts.
@@ -25,8 +25,11 @@ public class ch6p37 extends JApplet implements ActionListener // ActionListener 
 	iField.addActionListener(this);
 	form1.add(iField);
 
-	oArea = new JTextArea();
+	oArea = new JTextArea(5,10);
 	form1.add(oArea);
+	
+	oScroll = new JScrollPane(oArea);
+	form1.add(oScroll);
     }
 
     // tower function, this took me like 3 hours at this point. KILL ME
