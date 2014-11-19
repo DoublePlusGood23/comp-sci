@@ -45,6 +45,22 @@ public class Magpie3
 	    {
 		response = "Tell me more about your family.";
 	    }
+	else if (findKeyword(statement, "doge") >= 0
+		 || findKeyword(statement, "DOGE") >= 0)
+	    {
+		response = "much wow. many function call. such Java.";
+	    }
+	else if (findKeyword(statement, "test") >= 0
+		 || findKeyword(statement, "Test") >= 0
+		 || findKeyword(statement, "TEST") >= 0)
+	    {
+		response = "Test successful";
+	    }
+	else if (findKeyword(statement, "yolo") >= 0
+		 || findKeyword(statement, "YOLO") >= 0)
+	    {
+		response = "swedge";
+	    }
 	else
 	    {
 		response = getRandomResponse();
