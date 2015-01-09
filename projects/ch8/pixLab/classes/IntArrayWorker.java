@@ -98,5 +98,22 @@ public class IntArrayWorker
       }
     }
   }
- 
+    /*
+     * @return the count that the input appears in the array
+     */
+    public int getCount(int search)
+    {
+	int count = 0;
+	for(int row = 0; row < matrix.length; row++)
+	    {
+		for(int col = 0; col < matrix[0].length; col++)
+		    {
+			if(matrix[row][col] == search)
+			    {
+				count++;
+			    }
+		    }
+	    }
+	return count;
+    }
 }
