@@ -1,4 +1,8 @@
-DIRECTORY STRUCTURE
+##comp-sci
+All of the files we use and make in AP Comp-Sci should be here.  
+Push any missing ones.
+
+##Directory Structure
 
 [folder] - [description] : [subfolders]
 
@@ -9,5 +13,4 @@ sets - Program Sets, solutions to different problems in the textbook. : chX -> c
 
 
 
-Ethan R. Jones
-10-14-14
+Happy Hacking
