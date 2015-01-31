@@ -1,8 +1,8 @@
-##comp-sci
+comp-sci
 All of the files we use and make in AP Comp-Sci should be here.  
 Push any missing ones.
 
-##Directory Structure
+Directory Structure
 
 [folder] - [description] : [subfolders]
 
