@@ -1,63 +1,108 @@
-/*
-  Ethan R. Jones
-  1/15/2015
-  Time Test!
-*/
+/**
+ * @(#)TimeTestX.java
+ *
+ * TimeTestX Applet application
+ *
+ * @author
+ * @version 1.00 2015/1/29
+ */
 
 import java.awt.*;
-import java.awt.event.*;	// ActionListener
 import java.applet.*;
-import java.text.*;			// Font
 import javax.swing.*;
+import java.awt.event.*;
 
 public class TimeTestX extends JApplet implements ActionListener
 {
-    private Time3 time;
-    
-    private JLabel hourLabel, minuteLabel, secondLabel;
-    private JTextField hourField, minuteField, secondField, displayField;
-    private JButton tickButton;
+	private Time3 time;
 
-    public void init()
-    {
-	time = new Time3();
+	private JLabel hourLabel, minuteLabel, secondLabel;
+	private JTextField hourField, minuteField, secondField, displayField;
+	private JButton tickButton;
 
-	Container form1 = getContentPane();
-	form1.setLayout(new FlowLayout());
+	public void init()
+	{
+		time = new Time3();
 
-	hourLabel = new JLabel("Set Hour: ");
-	form1.add(hourLabel);
+		Container form1 = getContentPane();
+		form1.setLayout(new FlowLayout());
 
-	hourField = new JTextField(4);
-	form1.add(hourField);
+		hourLabel = new JLabel("Set Hour: ");
+		form1.add(hourLabel);
 
-	minuteLabel = new JLabel("Set Minutes: ");
-	form1.add(minuteLabel);
+		hourField = new JTextField(4);
+		form1.add(hourField);
 
-	minuteField = new JTextField(4);
-	form1.add(minuteField);
+		minuteLabel = new JLabel("Set Minute: ");
+		form1.add(minuteLabel);
 
-	secondLabel = new JLabel("Set Seconds: ");
-	form1.add(secondLabel);
+		minuteField = new JTextField(4);
+		form1.add(minuteField);
 
-	secondField = new JTextField(4);
-	form1.add(secondField);
+		secondLabel = new JLabel("Set Second: ");
+		form1.add(secondLabel);
 
-	displayField = new JTextField(30);
-	displayField.setEditable(false);
-	form1.add(displayField);
+		secondField = new JTextField(4);
+		form1.add(secondField);
 
-	tickButton = new JButton("Add 1 to seconds");
-	form1.add(tickButton);
+		displayField = new JTextField(30);
+		displayField.setEditable(false);
+		form1.add(displayField);
 
-	hourField.addActionListener(this);
-	minuteField.addActionListener(this);
+		tickButton = new JButton("Add 1 to seconds");
+		form1.add(tickButton);
 
-    }
+		hourField.addActionListener(this);
+		minuteField.addActionListener(this);
+		secondField.addActionListener(this);
+		tickButton.addActionListener(this);
 
-    public void paint(Graphics g)
-    {
-	
-    }
+		displayTime();
+	}
 
+	public void actionPerformed(ActionEvent e)
+	{
+		if(e.getSource()==tickButton)
+		{
+			tick();
+		}
+		else if(e.getSource()==hourField)
+		{
+			time.setHour( Integer.parseInt( hourField.getText() ) );
+			hourField.setText("");
+		}
+		else if(e.getSource()==minuteField)
+		{
+			time.setMinute( Integer.parseInt( minuteField.getText() ) );
+			minuteField.setText("");
+		}
+		else if(e.getSource()==secondField)
+		{
+			time.setSecond( Integer.parseInt( secondField.getText() ) );
+			secondField.setText("");
+		}
+
+		displayTime();
+	}
+
+	public void displayTime()
+	{
+		displayField.setText("Hour: " + time.getHour() + " Minute: " + time.getMinute() + " Second: " + time.getSecond());
+		showStatus("Standard time: " + time.toStandardString() + " Military time: " + time.toUniversalString());
+	}
+
+	public void tick()
+	{
+		time.setSecond( (time.getSecond() + 1) % 60);
+
+		if(time.getSecond()==0)
+		{
+			time.setMinute( (time.getMinute() + 1) % 60);
+
+			if(time.getMinute()==0)
+			{
+				time.setHour( (time.getHour() + 1) % 24);
+			}
+		}
+	}
 }
