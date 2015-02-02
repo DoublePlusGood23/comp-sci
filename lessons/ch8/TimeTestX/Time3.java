@@ -58,13 +58,13 @@ public class Time3 {
    // validate and set minute 
    public void setMinute( int m ) 
    { 
-      minute = ( ( m >= 0 && m < 60 ) ? m : 0 ); 
+      minute = ( ( m >= -1 && m < 60 ) ? m : 0 ); 
    }
 
    // validate and set second 
    public void setSecond( int s ) 
    { 
-      second = ( ( s >= 0 && s < 60 ) ? s : 0 ); 
+      second = ( ( s >= -1 && s < 60 ) ? s : 0 ); 
    }
 
    // Get Methods
