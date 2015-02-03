@@ -52,7 +52,7 @@ public class Time3 {
    // validate and set hour 
    public void setHour( int h ) 
    { 
-      hour = ( ( h >= 0 && h < 24 ) ? h : 0 ); 
+      hour = ( ( h >= -1 && h < 24 ) ? h : 0 ); 
    }
 
    // validate and set minute 

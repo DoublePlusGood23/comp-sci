@@ -18,7 +18,7 @@ public class TimeTestX extends JApplet implements ActionListener
 
     private JLabel hourLabel, minuteLabel, secondLabel;
     private JTextField hourField, minuteField, secondField, displayField;
-    private JButton tickButton, tickButton2;
+    private JButton tickButton, tickButton2, minButton, hourButton;
 
     public void init()
     {
@@ -49,17 +49,25 @@ public class TimeTestX extends JApplet implements ActionListener
 	displayField.setEditable(false);
 	form1.add(displayField);
 
-	tickButton = new JButton("Add 1 to seconds");
+	tickButton = new JButton("Add 1 to seconds.");
 	form1.add(tickButton);
 
-	tickButton2 = new JButton("Subtract 1 from seconds");
+	tickButton2 = new JButton("Subtract 1 from seconds.");
 	form1.add(tickButton2);
+
+	minButton = new JButton("Add Minute.");
+	form1.add(minButton);
+
+	hourButton = new JButton("Add Hour.");
+	form1.add(hourButton);
 
 	hourField.addActionListener(this);
 	minuteField.addActionListener(this);
 	secondField.addActionListener(this);
 	tickButton.addActionListener(this);
 	tickButton2.addActionListener(this);
+	minButton.addActionListener(this);
+	hourButton.addActionListener(this);
 
 	displayTime();
     }
@@ -73,6 +81,14 @@ public class TimeTestX extends JApplet implements ActionListener
 	else if(e.getSource()==tickButton2)
 	    {
 		decrease();
+	    }
+	else if(e.getSource() == minButton)
+	    {
+		minPlus();
+	    }
+	else if(e.getSource() == hourButton)
+	    {
+		hourPlus();
 	    }
 	else if(e.getSource()==hourField)
 	    {
@@ -105,7 +121,7 @@ public class TimeTestX extends JApplet implements ActionListener
 	if(time.getSecond()==0)
 	    {
 		time.setMinute( (time.getMinute() + 1) % 60);
-		    
+		
 		if(time.getMinute()==0)
 		    {
 			time.setHour( (time.getHour() + 1) % 24);
@@ -118,13 +134,30 @@ public class TimeTestX extends JApplet implements ActionListener
 	time.setSecond((time.getSecond() - 1) % 60);
 	if(time.getSecond()==-1)
 	    {
-		time.setMinute(59);
+		time.setSecond(59);
+		time.setMinute(time.getMinute() - 1);
 		if(time.getMinute()==-1)
 		    {
-			time.setHour(59);
+			time.setMinute(59);
+			time.setHour(time.getHour() - 1);
+			if(time.getHour() == -1)
+			    {
+				time.setHour(23);
+			    }
 		    }
 	    }
     }
-    
+    public void minPlus()
+    {
+	time.setMinute( (time.getMinute() + 1) % 60);
+	if(time.getMinute()==0)
+	    {
+		time.setHour( (time.getHour() + 1) % 24);
+	    }
+    }
+    public void hourPlus()
+    {
+	time.setHour( (time.getHour() + 1) % 60);
+    }
 }
 
