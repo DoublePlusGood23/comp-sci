@@ -11,7 +11,19 @@
 │   │   ├── Chapter 5 Program Set - Part 2.rtf
 │   │   └── Chapter 5 Set List.gnumeric
 │   ├── ch6
+│   │   ├── AP Quick Reference.pdf
+│   │   ├── ArrayList Class.pdf
 │   │   └── Chapter 6 Notes - Methods.rtf
+│   ├── ch7
+│   │   └── AP Example Questions - Sort and Search
+│   │       ├── AP Question Sort 1.jpg
+│   │       ├── AP Question Sort 2.jpg
+│   │       ├── AP Question Sort 3.jpg
+│   │       ├── AP Question Sort 4.jpg
+│   │       ├── AP Question Sort 5.jpg
+│   │       └── AP Question Sort 6.jpg
+│   ├── ch8
+│   │   └── Chapter 8 Notes - Packet Review.rtf
 │   └── orphan
 │       └── AP Computer Science 2014 Course Description.pdf
 ├── lessons
@@ -33,34 +45,274 @@
 │   │   ├── ch5interest.java
 │   │   ├── ch5wrapup.class
 │   │   └── ch5wrapup.java
-│   └── ch6
-│       ├── formsMethod
-│       │   ├── formsMethod.class
-│       │   ├── formsMethod.html
-│       │   └── formsMethod.java
-│       ├── methodicalfun.class
-│       ├── methodicalfun.java
-│       ├── powerTable
-│       │   ├── powerTable.class
-│       │   ├── powerTable.html
-│       │   └── powerTable.java
-│       ├── randomNumbers.class
-│       └── randomNumbers.java
+│   ├── ch6
+│   │   ├── buttonPrime
+│   │   │   ├── buttonPrime.class
+│   │   │   ├── buttonPrime.html
+│   │   │   └── buttonPrime.java
+│   │   ├── formsMethod
+│   │   │   ├── formsMethod.class
+│   │   │   ├── formsMethod.html
+│   │   │   └── formsMethod.java
+│   │   ├── methodicalfun.class
+│   │   ├── methodicalfun.java
+│   │   ├── powerTable
+│   │   │   ├── powerTable.class
+│   │   │   ├── powerTable.html
+│   │   │   └── powerTable.java
+│   │   ├── randomNumbers.class
+│   │   ├── randomNumbers.java
+│   │   ├── scopeA
+│   │   │   ├── scopeA.class
+│   │   │   ├── scopeA.html
+│   │   │   └── scopeA.java
+│   │   ├── stringCompare.class
+│   │   ├── stringCompare.java
+│   │   ├── stringFun.class
+│   │   ├── stringFun.java
+│   │   └── tempConversion
+│   │       ├── tempConversion.class
+│   │       ├── tempConversion.html
+│   │       └── tempConversion.java
+│   ├── ch7
+│   │   ├── ArraysInJava.class
+│   │   ├── ArraysInJava.java
+│   │   ├── BinarySearch
+│   │   │   ├── BinarySearch.class
+│   │   │   ├── BinarySearch.html
+│   │   │   └── BinarySearch.java
+│   │   ├── CompletelyIndependentlyOfEverythingWeHaveDone.class
+│   │   ├── CompletelyIndependentlyOfEverythingWeHaveDone.java
+│   │   ├── insertionSort.java
+│   │   ├── mergeSort.class
+│   │   ├── mergeSort.java
+│   │   ├── PassArray.class
+│   │   ├── PassArray.java
+│   │   ├── selectionSort.class
+│   │   ├── selectionSort.java
+│   │   ├── TwoDArray.class
+│   │   └── TwoDArray.java
+│   └── ch8
+│       ├── Time3.java
+│       ├── TimeTest.java
+│       └── TimeTestX
+│           ├── Time3.java
+│           ├── TimeTest.java
+│           ├── TimeTestX.html
+│           └── TimeTestX.java
 ├── projects
-│   └── ch1
-│       └── Magpie
-│           ├── ActivityTwo
-│           │   ├── ActivityTwo.jcp
-│           │   ├── Magpie2.class
-│           │   ├── Magpie2.java
-│           │   ├── MagpieRunner2.class
-│           │   ├── MagpieRunner2.java
-│           │   └── src_activitytwo.txt
-│           ├── Magpie2.java
-│           ├── Magpie.jcu
-│           ├── Magpie.jcw
-│           ├── Magpie Lab Student Guide_updated_2014_Final.pdf
-│           └── MagpieRunner2.java
+│   ├── ch1
+│   │   └── Magpie
+│   │       ├── ActivityTwo
+│   │       │   ├── ActivityTwo.jcp
+│   │       │   ├── Magpie2.class
+│   │       │   ├── Magpie2.java
+│   │       │   ├── MagpieRunner2.class
+│   │       │   ├── MagpieRunner2.java
+│   │       │   └── src_activitytwo.txt
+│   │       ├── Magpie2.java
+│   │       ├── Magpie.jcu
+│   │       ├── Magpie.jcw
+│   │       ├── Magpie Lab Student Guide_updated_2014_Final.pdf
+│   │       └── MagpieRunner2.java
+│   ├── ch6
+│   │   └── Magpie
+│   │       ├── MagpieActivityStarterCode
+│   │       │   ├── activity2
+│   │       │   │   ├── doc
+│   │       │   │   │   ├── allclasses-frame.html
+│   │       │   │   │   ├── allclasses-noframe.html
+│   │       │   │   │   ├── constant-values.html
+│   │       │   │   │   ├── deprecated-list.html
+│   │       │   │   │   ├── help-doc.html
+│   │       │   │   │   ├── index-all.html
+│   │       │   │   │   ├── index.html
+│   │       │   │   │   ├── Magpie2.html
+│   │       │   │   │   ├── overview-tree.html
+│   │       │   │   │   ├── package-frame.html
+│   │       │   │   │   ├── package-list
+│   │       │   │   │   ├── package-summary.html
+│   │       │   │   │   ├── package-tree.html
+│   │       │   │   │   ├── resources
+│   │       │   │   │   │   ├── inherit.gif
+│   │       │   │   │   │   └── Thumbs.db
+│   │       │   │   │   └── stylesheet.css
+│   │       │   │   ├── Magpie2.class
+│   │       │   │   ├── Magpie2.java
+│   │       │   │   ├── MagpieRunner2.class
+│   │       │   │   ├── MagpieRunner2.java
+│   │       │   │   └── resources
+│   │       │   │       ├── inherit.gif
+│   │       │   │       └── Thumbs.db
+│   │       │   ├── activity3
+│   │       │   │   ├── doc
+│   │       │   │   │   ├── allclasses-frame.html
+│   │       │   │   │   ├── allclasses-noframe.html
+│   │       │   │   │   ├── constant-values.html
+│   │       │   │   │   ├── deprecated-list.html
+│   │       │   │   │   ├── help-doc.html
+│   │       │   │   │   ├── index-all.html
+│   │       │   │   │   ├── index.html
+│   │       │   │   │   ├── Magpie3.html
+│   │       │   │   │   ├── overview-tree.html
+│   │       │   │   │   ├── package-frame.html
+│   │       │   │   │   ├── package-list
+│   │       │   │   │   ├── package-summary.html
+│   │       │   │   │   ├── package-tree.html
+│   │       │   │   │   ├── resources
+│   │       │   │   │   │   └── inherit.gif
+│   │       │   │   │   └── stylesheet.css
+│   │       │   │   ├── Magpie3.class
+│   │       │   │   ├── Magpie3.java
+│   │       │   │   ├── MagpieRunner3.class
+│   │       │   │   ├── MagpieRunner3.java
+│   │       │   │   ├── StringExplorer.class
+│   │       │   │   └── StringExplorer.java
+│   │       │   ├── activity4
+│   │       │   │   ├── doc
+│   │       │   │   │   ├── allclasses-frame.html
+│   │       │   │   │   ├── allclasses-noframe.html
+│   │       │   │   │   ├── constant-values.html
+│   │       │   │   │   ├── deprecated-list.html
+│   │       │   │   │   ├── help-doc.html
+│   │       │   │   │   ├── index-all.html
+│   │       │   │   │   ├── index.html
+│   │       │   │   │   ├── Magpie4.html
+│   │       │   │   │   ├── overview-tree.html
+│   │       │   │   │   ├── package-frame.html
+│   │       │   │   │   ├── package-list
+│   │       │   │   │   ├── package-summary.html
+│   │       │   │   │   ├── package-tree.html
+│   │       │   │   │   ├── resources
+│   │       │   │   │   │   └── inherit.gif
+│   │       │   │   │   └── stylesheet.css
+│   │       │   │   ├── Magpie4.class
+│   │       │   │   ├── Magpie4.java
+│   │       │   │   ├── MagpieRunner4.class
+│   │       │   │   └── MagpieRunner4.java
+│   │       │   └── activity5
+│   │       │       ├── doc
+│   │       │       │   ├── allclasses-frame.html
+│   │       │       │   ├── allclasses-noframe.html
+│   │       │       │   ├── constant-values.html
+│   │       │       │   ├── deprecated-list.html
+│   │       │       │   ├── help-doc.html
+│   │       │       │   ├── index-all.html
+│   │       │       │   ├── index.html
+│   │       │       │   ├── Magpie5.html
+│   │       │       │   ├── overview-tree.html
+│   │       │       │   ├── package-frame.html
+│   │       │       │   ├── package-list
+│   │       │       │   ├── package-summary.html
+│   │       │       │   ├── package-tree.html
+│   │       │       │   ├── resources
+│   │       │       │   │   └── inherit.gif
+│   │       │       │   └── stylesheet.css
+│   │       │       ├── Magpie5.class
+│   │       │       ├── Magpie5.java
+│   │       │       ├── MagpieRunner5.class
+│   │       │       └── MagpieRunner5.java
+│   │       └── Magpie Chatbot Lab.pdf
+│   └── ch8
+│       ├── Picture Lab Student Guide_updated_2014_Final.pdf
+│       ├── pixLab
+│       │   ├── classes
+│       │   │   ├── ColorChooser.class
+│       │   │   ├── ColorChooser.java
+│       │   │   ├── DigitalPicture.class
+│       │   │   ├── DigitalPicture.java
+│       │   │   ├── doc
+│       │   │   │   ├── allclasses-frame.html
+│       │   │   │   ├── allclasses-noframe.html
+│       │   │   │   ├── ColorChooser.html
+│       │   │   │   ├── constant-values.html
+│       │   │   │   ├── deprecated-list.html
+│       │   │   │   ├── DigitalPicture.html
+│       │   │   │   ├── FileChooser.html
+│       │   │   │   ├── help-doc.html
+│       │   │   │   ├── ImageDisplay.html
+│       │   │   │   ├── index-all.html
+│       │   │   │   ├── index.html
+│       │   │   │   ├── IntArrayWorker.html
+│       │   │   │   ├── IntArrayWorkerTester.html
+│       │   │   │   ├── overview-tree.html
+│       │   │   │   ├── package-frame.html
+│       │   │   │   ├── package-list
+│       │   │   │   ├── package-summary.html
+│       │   │   │   ├── package-tree.html
+│       │   │   │   ├── PictureExplorer.html
+│       │   │   │   ├── PictureFrame.html
+│       │   │   │   ├── Picture.html
+│       │   │   │   ├── PictureTester.html
+│       │   │   │   ├── Pixel.html
+│       │   │   │   ├── resources
+│       │   │   │   │   └── inherit.gif
+│       │   │   │   ├── serialized-form.html
+│       │   │   │   ├── SimplePicture.html
+│       │   │   │   └── stylesheet.css
+│       │   │   ├── FileChooser.class
+│       │   │   ├── FileChooser.java
+│       │   │   ├── ImageDisplay.class
+│       │   │   ├── ImageDisplay.java
+│       │   │   ├── IntArrayWorker.class
+│       │   │   ├── IntArrayWorker.java
+│       │   │   ├── IntArrayWorkerTester.class
+│       │   │   ├── IntArrayWorkerTester.java
+│       │   │   ├── leftArrow.gif
+│       │   │   ├── Picture.class
+│       │   │   ├── PictureExplorer$1.class
+│       │   │   ├── PictureExplorer$2.class
+│       │   │   ├── PictureExplorer$3.class
+│       │   │   ├── PictureExplorer$4.class
+│       │   │   ├── PictureExplorer$5.class
+│       │   │   ├── PictureExplorer$6.class
+│       │   │   ├── PictureExplorer.class
+│       │   │   ├── PictureExplorer.java
+│       │   │   ├── PictureExplorer$PictureExplorerFocusTraversalPolicy.class
+│       │   │   ├── PictureFrame.class
+│       │   │   ├── PictureFrame.java
+│       │   │   ├── Picture.java
+│       │   │   ├── PictureTester.class
+│       │   │   ├── PictureTester.java
+│       │   │   ├── Pixel.class
+│       │   │   ├── Pixel.java
+│       │   │   ├── rightArrow.gif
+│       │   │   ├── SimplePicture.class
+│       │   │   └── SimplePicture.java
+│       │   └── images
+│       │       ├── 640x480.jpg
+│       │       ├── 7inX95in.jpg
+│       │       ├── arch.jpg
+│       │       ├── barbaraS.jpg
+│       │       ├── beach.jpg
+│       │       ├── blue-mark.jpg
+│       │       ├── blueMotorcycle.jpg
+│       │       ├── butterfly1.jpg
+│       │       ├── caterpillar.jpg
+│       │       ├── CumberlandIsland.jpg
+│       │       ├── femaleLionAndHall.jpg
+│       │       ├── flower1.jpg
+│       │       ├── flower2.jpg
+│       │       ├── gorge.jpg
+│       │       ├── jenny-red.jpg
+│       │       ├── KatieFancy.jpg
+│       │       ├── kitten2.jpg
+│       │       ├── koala.jpg
+│       │       ├── moon-surface.jpg
+│       │       ├── msg.jpg
+│       │       ├── msg-lofi.jpg
+│       │       ├── redMotorcycle.jpg
+│       │       ├── robot.jpg
+│       │       ├── seagull.jpg
+│       │       ├── smallmoon.jpg
+│       │       ├── snowman.jpg
+│       │       ├── swan.jpg
+│       │       ├── temple.jpg
+│       │       ├── thruDoor.jpg
+│       │       ├── wall.jpg
+│       │       ├── water.jpg
+│       │       └── whiteFlower.jpg
+│       └── pixLab Notes.rtf
 ├── readme.txt
 ├── sets
 │   ├── ch3
@@ -144,28 +396,71 @@
 │   │   └── ch4p32c
 │   │       ├── ch4p32c.class
 │   │       └── ch4p32c.java
-│   └── ch5
-│       ├── ch5p1
-│       │   ├── ch5p1.class
-│       │   └── ch5p1.java
-│       ├── ch5p2
-│       │   ├── ch5p2.class
-│       │   └── ch5p2.java
-│       ├── ch5p3
-│       │   ├── ch5p3.class
-│       │   └── ch5p3.java
-│       ├── ch5p4
-│       │   ├── ch5p4.class
-│       │   └── ch5p4.java
-│       ├── ch5p5
-│       │   ├── ch5p5.class
-│       │   └── ch5p5.java
-│       ├── ch5p6
-│       │   ├── ch5p6.class
-│       │   └── ch5p6.java
-│       └── ch5p7
-│           └── ch5p7.java
+│   ├── ch5
+│   │   ├── ch5p1
+│   │   │   ├── ch5p1.class
+│   │   │   └── ch5p1.java
+│   │   ├── ch5p2
+│   │   │   ├── ch5p2.class
+│   │   │   └── ch5p2.java
+│   │   ├── ch5p3
+│   │   │   ├── ch5p3.class
+│   │   │   └── ch5p3.java
+│   │   ├── ch5p4
+│   │   │   ├── ch5p4.class
+│   │   │   └── ch5p4.java
+│   │   ├── ch5p5
+│   │   │   ├── ch5p5.class
+│   │   │   └── ch5p5.java
+│   │   ├── ch5p6
+│   │   │   ├── ch5p6.class
+│   │   │   └── ch5p6.java
+│   │   └── ch5p7
+│   │       ├── #ch5p7.java#
+│   │       └── ch5p7.java
+│   ├── ch6
+│   │   ├── ch6p17
+│   │   │   ├── ch6p17.class
+│   │   │   ├── ch6p17.html
+│   │   │   └── ch6p17.java
+│   │   ├── ch6p18
+│   │   │   ├── ch6p18.class
+│   │   │   ├── ch6p18.html
+│   │   │   └── ch6p18.java
+│   │   ├── ch6p37
+│   │   │   ├── ch6p37.class
+│   │   │   ├── ch6p37.html
+│   │   │   └── ch6p37.java
+│   │   ├── ch6p43
+│   │   │   └── ch6p43.txt
+│   │   ├── ch6p45
+│   │   │   └── ch6p45.txt
+│   │   ├── ch6p8
+│   │   │   ├── ch6p8.class
+│   │   │   ├── ch6p8.html
+│   │   │   └── ch6p8.java
+│   │   ├── countHi
+│   │   │   ├── #countHi.java#
+│   │   │   └── countHi.java
+│   │   ├── extraFront
+│   │   │   └── extraFront.java
+│   │   ├── makeOutWord
+│   │   │   └── makeOutWord.java
+│   │   └── seeColor
+│   │       └── seeColor.java
+│   └── ch7
+│       ├── commonEnd.java
+│       ├── countEvens.java
+│       ├── linearIn.java
+│       ├── linearln.java
+│       ├── makeMiddle.java
+│       ├── no23.java
+│       ├── shiftLeft.java
+│       ├── twoTwo.java
+│       ├── wordsCount.java
+│       └── wordsWithout.java
+├── stats-gen.sh
 ├── stats.html
 └── structure.txt
 
-51 directories, 117 files
+95 directories, 368 files
