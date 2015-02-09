@@ -3,7 +3,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class MyRectangle
+public class MyOval
 {
     private int x1;
     private int y1;

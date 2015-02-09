@@ -10,6 +10,7 @@ public class DrawPanel extends JPanel
     private Random random = new Random();
     private MyLine[] lines;
     private MyRectangle[] rects;
+    private MyOval[] ovals;
     
     public DrawPanel()
     {
@@ -51,7 +52,7 @@ public class DrawPanel extends JPanel
 			
 		rects[count] = new MyRectangle(x1, y1, x2, y2, c, f);
 	    }
-	rects = new MyRectangle[100];
+	ovals = new MyOval[100];
 	for(int count = 0; count < rects.length; count ++)
 	    {
 		int x1 = random.nextInt(500);	// 0-499
@@ -67,7 +68,7 @@ public class DrawPanel extends JPanel
 
 		boolean f = random.nextBoolean();
 		
-		rects[count] = new MyRectangle(x1, y1, x2, y2, c, f);
+		ovals[count] = new MyOval(x1, y1, x2, y2, c, f);
 	    }
     }
 
