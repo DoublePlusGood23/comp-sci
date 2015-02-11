@@ -69,7 +69,7 @@ public class Rectangle2
 
     public int getWidth()
     {
-	
+	return width;
     }
 
     public int getHeight()
@@ -77,9 +77,18 @@ public class Rectangle2
 	return height;
     }
 
+    public int perimeter()
+    {
+	return 2 * width + 2 * height;
+    }
+
+    public int area ()
+    {
+	return width * height;
+    }
+    
     public String toString()
     {
 	return "(" + x + "," + y + ") Width = " + width + " Height = " + height;
     }
-    
 }
