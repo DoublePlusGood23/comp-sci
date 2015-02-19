@@ -24,7 +24,6 @@ public class MyCylinder extends MyCircle
     public void setHeight(double height)
     {
 	this.height = (height > 0 ? height : 1);
-    
     }
 
     // Get functions
@@ -48,5 +47,4 @@ public class MyCylinder extends MyCircle
     {
 	return super.toString() + "  Height = " + getHeight();
     }
-    
 }
