@@ -15,15 +15,20 @@ public class MyQuadrilateral extends Point
 	
     }
 
-    public Quadrilateral(int x1, int y1, int x2, int y2)
+    public Quadrilateral(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
     {
 	p1 = new Point(x1, y1);
-	setRadius(radius);
+	p2 = new Point(x2, y2);
+	p3 = new Point(x3, y3);
+	p4 = new Point(x4, y4);
+	
     }
 
     // Mutators
-    public void setRadius(double radius)
+
+    // Get Functions
+    public String toString()
     {
-	this.radius = (radius > 0 ? radius : 1);
+	return "" + p1.toString() + "," + p2.toString() + "," +p3.toString() + "," + p4.toString();
     }
 }
