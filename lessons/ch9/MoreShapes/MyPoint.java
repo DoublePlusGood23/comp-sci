@@ -14,7 +14,7 @@ public class MyPoint
     {
 
     }
-
+x
     // Specific Constructor (x,y)
     public MyPoint(int x, int y)
     {
@@ -49,5 +49,6 @@ public class MyPoint
     {
 	return "(" + getX() + "," + getY() + ")";
     }
+
     
 }
