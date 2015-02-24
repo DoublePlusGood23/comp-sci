@@ -3,14 +3,14 @@
   2-19-15
   My Quadrilateral
 */
-public class MyQuadrilateral extends Point
+public class Quadrilateral extends Point
 {
     private p1;
     private p2;
     private p3;
     private p4;
 
-    public MyQuadrilateral(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
+    public Quadrilateral(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4)
     {
 	p1 = new Point(x1, y1);
 	p2 = new Point(x2, y2);
@@ -42,6 +42,6 @@ public class MyQuadrilateral extends Point
     // Get Functions
     public String toString()
     {
-	return "" + p1.toString() + "," + p2.toString() + "," +p3.toString() + "," + p4.toString();
+	return "Coordinates of Quadrilateral:\n" + p1.toString() + "," + p2.toString() + "," +p3.toString() + "," + p4.toString();
     }   
 }

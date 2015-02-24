@@ -4,42 +4,42 @@
   MyPoint Class (Base class/ Super class)
 */
 
-public class MyPoint
+public class Point
 {
-    private int x;
-    private int y;
+    private float x;
+    private float y;
 
     // Default no arguement constructor.
-    public MyPoint()
+    public Point()
     {
 
     }
-x
+    
     // Specific Constructor (x,y)
-    public MyPoint(int x, int y)
+    public Point(float x, float y)
     {
 	this.x = x;
 	this.y = y;
     }
 
     // Get Functions
-    public int getX()
+    public float getX()
     {
 	return x;
     }
 
-    public int getY()
+    public float getY()
     {
 	return y;
     }
 
     // Mutators
-    public void setX(int x)
+    public void setX(float x)
     {
 	this.x = x;
     }
 
-    public void setY(int y)
+    public void setY(float y)
     {
 	this.y = y;
     }
