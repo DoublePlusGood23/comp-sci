@@ -6,9 +6,9 @@ import javax.swing.*;
 
 public class EmployeeTest
 {
-   public static void main( String[] args )
-   {
-		DecimalFormat twoDigits = new DecimalFormat( "0.00" );
+    public static void main( String[] args )
+    {
+	DecimalFormat twoDigits = new DecimalFormat( "0.00" );
 
       	// create Employee array
       	Employee employees[] = new Employee[ 4 ];
@@ -22,13 +22,13 @@ public class EmployeeTest
       	String output = "";
 
       	// generically process each element in array employees
-		for ( int i = 0; i < employees.length; i++ )
-		{
-			output += employees[ i ].toString() + "\nEmployee " + i +
-				" is a " + employees[ i ].getClass().getName() + "\n";
-		}
+	for ( int i = 0; i < employees.length; i++ )
+	    {
+		output += employees[ i ].toString() + "\nEmployee " + i +
+		    " is a " + employees[ i ].getClass().getName() + "\n";
+	    }
 
-		JOptionPane.showMessageDialog( null, output );
-		System.exit( 0 );
-   }
+	JOptionPane.showMessageDialog( null, output );
+	System.exit( 0 );
+    }
 }
