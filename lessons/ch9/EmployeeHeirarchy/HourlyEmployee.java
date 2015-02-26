@@ -34,7 +34,7 @@ public class HourlyEmployee extends Employee
 	return wage;
     }
 
-    pubic double getHours()
+    public double getHours()
     {
 	return hours;
     }

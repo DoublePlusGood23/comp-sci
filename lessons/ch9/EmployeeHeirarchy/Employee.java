@@ -6,11 +6,11 @@ public class Employee
     private String lastName;
     private String SSN;
 
-    public Employee(String f, String last, String SSN)
+    public Employee(String f, String l, String SSN)
     {
-	firstName = first;
-	lastName = last;
-	this.SSN = SSN;
+	setFirstName(f);
+	setLastName(l);
+	setSSN(SSN);
     }
 
     public Employee()
@@ -37,12 +37,12 @@ public class Employee
 
     // Get functions.
 
-    public void getFirstName()
+    public String getFirstName()
     {
 	return firstName;
     }
 
-    public void getLastName()
+    public String getLastName()
     {
 	return lastName;
     }
