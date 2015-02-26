@@ -5,12 +5,12 @@
 */
 public class Quadrilateral extends Point
 {
-    private p1;
-    private p2;
-    private p3;
-    private p4;
+    private Point p1;
+    private Point p2;
+    private Point p3;
+    private Point p4;
 
-    public Quadrilateral(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4)
+    public Quadrilateral(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
     {
 	p1 = new Point(x1, y1);
 	p2 = new Point(x2, y2);

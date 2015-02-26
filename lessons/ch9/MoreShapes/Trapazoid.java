@@ -6,28 +6,28 @@
 public class Trapazoid extends Quadrilateral
 {
 
-    public Trapazoid(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4)
+    public Trapazoid(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
     {
 	super(x1,y1,x2,y2,x3,y3,x4,y4);
     }
 
     // Mutators
-    public float getArea()
+    public double getArea()
     {
 	return ((getBase1() - getBase2()) * getHeight()) / 2.0;
     }
 
-    public float getBase1()
+    public double getBase1()
     {
 	return Math.abs(super.getPoint1().getX() - super.getPoint2().getX());
     }
 
-    public float getBase2()
+    public double getBase2()
     {
 	return Math.abs(super.getPoint3().getX() - super.getPoint4().getX());
     }
 
-    public float getHeight()
+    public double getHeight()
     {
 	return Math.abs(super.getPoint1().getY() - super.getPoint3().getY());
     }
