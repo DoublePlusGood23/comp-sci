@@ -42,6 +42,6 @@ public class Quadrilateral extends Point
     // Get Functions
     public String toString()
     {
-	return "Coordinates of Quadrilateral:\n" + p1.toString() + "," + p2.toString() + "," +p3.toString() + "," + p4.toString();
+	return p1.toString() + "," + p2.toString() + "," +p3.toString() + "," + p4.toString();
     }   
 }

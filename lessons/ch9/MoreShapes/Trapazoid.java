@@ -14,7 +14,7 @@ public class Trapazoid extends Quadrilateral
     // Mutators
     public double getArea()
     {
-	return ((getBase1() - getBase2()) * getHeight()) / 2.0;
+	return ((getBase1() + getBase2()) / 2.0) * getHeight();
     }
 
     public double getBase1()
@@ -35,6 +35,6 @@ public class Trapazoid extends Quadrilateral
     // Get Functions
     public String toString()
     {
-	return "Coordinates of Trapazoid are:\n" + super.getPoint1.toString() + "," + super.getPoint2.toString() + "," + super.getPoint3.toString() + "," + super.getPoint4.toString() + "\nHeight is: " + getHeight() + "\nArea is: " + getArea();
+	return super.getPoint1().toString() + "," + super.getPoint2().toString() + "," + super.getPoint3().toString() + "," + super.getPoint4().toString() + "\nHeight is: " + getHeight() + "\nArea is: " + getArea();
     }
 }

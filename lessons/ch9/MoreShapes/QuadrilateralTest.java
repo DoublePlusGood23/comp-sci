@@ -29,9 +29,9 @@ public class QuadrilateralTest {
 	Square square = new Square( 
 				   4.0, 0.0, 8.0, 0.0, 8.0, 4.0, 4.0, 4.0 );
 
-	String result = quadrilateral.toString() + "\n" +
-	    trapazoid.toString() + "\n" + parallelogram.toString() + 
-	    "\n" + rectangle.toString() + "\n" + square.toString();
+	String result = "Coordinates of Quadrilateral are: \n" + quadrilateral.toString() + "\n\nCoordinates of Trapazoid are: \n" +
+	    trapazoid.toString() + "\n\nCoordinates of Parallelogram are: \n" + parallelogram.toString() + 
+	    "\n\nCoordinates of Rectangle are: \n" + rectangle.toString() + "\n\nCoordinates of Square are: \n" + square.toString();
 
 	JOptionPane.showMessageDialog( null, result );
 	System.exit( 0 );

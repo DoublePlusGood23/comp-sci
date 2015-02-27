@@ -3,7 +3,7 @@
   2-19-15
   Rectangle
 */
-public class Rectangle extends Paraellogram
+public class Rectangle extends Parallelogram
 {
 
     public Rectangle(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)

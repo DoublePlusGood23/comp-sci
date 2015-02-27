@@ -16,6 +16,6 @@ public class Parallelogram extends Trapazoid
     // Get Functions
     public String toString()
     {
-	return "Coordinates of Paraellogram are: " + super.toString() + "\nWidth: " + super.getBase1(); 
+	return super.toString() + "\nWidth: " + super.getBase1(); 
     }
 }
