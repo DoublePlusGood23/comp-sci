@@ -29,6 +29,6 @@ public class SalariedEmployee extends Employee
 
     public String toString()
     {
-	return "Salaried Employee: " + super.toString() + "\nSalary: " + getSalary();
+	return super.toString() + "\nSalary: " + getSalary();
     }
 }

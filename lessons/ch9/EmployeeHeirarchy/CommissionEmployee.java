@@ -41,6 +41,6 @@ public class CommissionEmployee extends Employee
 
     public String toString()
     {
-	return "Commission Employee: " + super.toString() + "\nSale: " + getSale() + "\nPercent: " + getPercent();
+	return super.toString() + "\nSale: " + getSale() + "\nPercent: " + getPercent();
     }
 }

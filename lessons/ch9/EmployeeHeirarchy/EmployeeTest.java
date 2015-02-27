@@ -24,8 +24,8 @@ public class EmployeeTest
       	// generically process each element in array employees
 	for ( int i = 0; i < employees.length; i++ )
 	    {
-		output += employees[ i ].toString() + "\nEmployee " + i +
-		    " is a " + employees[ i ].getClass().getName() + "\n";
+		output += employees[ i ].toString() + i +
+		    "\nis a " + employees[ i ].getClass().getName() + "\n\n";
 	    }
 
 	JOptionPane.showMessageDialog( null, output );

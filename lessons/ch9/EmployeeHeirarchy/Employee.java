@@ -54,6 +54,6 @@ public class Employee
 
     public String toString()
     {
-	return getFirstName() + " " + getLastName() + " " + " SSN: " + getSSN();
+	return getFirstName() + " " + getLastName() +  "\nSSN: " + getSSN();
     }
 }

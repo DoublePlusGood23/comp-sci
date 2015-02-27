@@ -29,6 +29,6 @@ public class BasePlusCommissionEmployee extends CommissionEmployee
 
     public String toString()
     {
-	return "Base Plus Commission Employee: " + super.toString() + getBase();
+	return super.toString() + "\nBase: " + getBase();
     }
 }
