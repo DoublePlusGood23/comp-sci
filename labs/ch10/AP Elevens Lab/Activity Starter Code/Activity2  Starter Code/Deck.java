@@ -36,10 +36,10 @@ public class Deck {
 	
 	for(int x = 0; x < ranks.length; x++)
 	    {
-		for(int y = 0; y < suits.length; x++)
+		for(int y = 0; y < suits.length; y++)
 		    {
-			Card temp = new Card(ranks[x], ranks[s], values[x]);
-			cards.add(Card);
+			Card temp = new Card(ranks[x], suits[y], values[x]);
+			cards.add(temp);
 		    }
 	    }
 	size = cards.size();
@@ -49,7 +49,7 @@ public class Deck {
 
     /**
      * Determines if this deck is empty (no undealt cards).
-     * @return true if this deck is empty, false otherwise.
+ x    * @return true if this deck is empty, false otherwise.
      */
     public boolean isEmpty()
     {
@@ -66,18 +66,21 @@ public class Deck {
      */
     public int size()
     {
-	return ;
+	return size;
     }
 
     /**
      * Randomly permute the given collection of cards
      * and reset the size to represent the entire deck.
      */
+
+    /*
     public void shuffle()
     {
 	
     }
-
+    */
+    
     /**
      * Deals a card from this deck.
      * @return the card just dealt, or null if all the cards have been
@@ -85,9 +88,15 @@ public class Deck {
      */
     public Card deal()
     {
-	
+	if (isEmpty())
+	    {
+		return null;
+	    }
+	size--;
+	Card c = cards.get(size);
+	return c;
     }
-
+    
     /**
      * Generates and returns a string representation of this deck.
      * @return a string representation of this deck.

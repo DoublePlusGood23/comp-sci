@@ -3,7 +3,8 @@
  *
  * <code>Card</code> represents a playing card.
  */
-public class Card {
+public class Card
+{
 
     /**
      * String value that holds the suit of the card
@@ -86,7 +87,8 @@ public class Card {
      *         and point value of the card.
      */
     @Override
-    public String toString() {
+    public String toString()
+    {
 	return rank + " of " + suit + " (point value = " + pointValue + ")";
     }
 }
