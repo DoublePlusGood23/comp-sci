@@ -22,5 +22,7 @@ public class CardTester
 	System.out.println("  rank: " + aceClubs2.rank());
 	System.out.println("  suit: " + aceClubs2.suit());
 	System.out.println("  pointValue: " + aceClubs2.pointValue());
+	System.out.println("\n***** test six***");
+	System.out.println("  six: " + sixHearts.toString());
     }
 }

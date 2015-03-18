@@ -33,9 +33,9 @@ public class Card {
      */
     public Card(String cardRank, String cardSuit, int cardPointValue)
     {
-	cardRank = rank;
-	cardSuit = suit;
-	cardPointValue = pointValue;
+	rank = cardRank;
+	suit = cardSuit;
+	pointValue = cardPointValue;
     }
 
 
