@@ -113,11 +113,15 @@ public class Shuffler
     public static void selectionShuffle(int[] values)
     {	
 	int shuffled[] = new int[values.length];
-	Random r = new Random();
+ 
 	
-	for(int k = 51; k > 1; k--)
+	for(int k = values.length-1; k >= 0; k--)
 	    {
-	       values[k] = values[r.nextInt(k)];
+		int tempVal = (int)(Math.random() * values.length);
+		int placehold = values[tempVal];
+		
+		values[tempVal] = values[k];
+		values[k] = placehold;
 	    }
     }
 }
