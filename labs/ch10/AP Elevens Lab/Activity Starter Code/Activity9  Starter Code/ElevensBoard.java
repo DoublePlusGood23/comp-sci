@@ -91,7 +91,7 @@ public class ElevensBoard extends Board {
 		return false;
 	    }
     }
-
+    
     /**
      * Check for an 11-pair in the selected cards.
      * @param selectedCards selects a subset of this board.  It is list
@@ -102,21 +102,20 @@ public class ElevensBoard extends Board {
      */
     private boolean containsPairSum11(List<Integer> selectedCards)
     {
-	
 	for(int sk1 = 0; sk1 < selectedCards.size(); sk1++)
 	    {
 		int k1 = selectedCards.get(sk1).intValue();
 		for(int sk2 = sk1 + 1; sk2 < selectedCards.size(); sk2++) 
-		{
-		    int k2 = selectedCards.get(sk2).intValue();
-		    if(cardAt(k1).pointValue() + cardAt(k1).pointValue() == 11)
-			{
-			    return true;
-			}
-		}
+		    {
+			int k2 = selectedCards.get(sk2).intValue();
+			if(cardAt(k1).pointValue() + cardAt(k1).pointValue() == 11)
+			    {
+				return true;
+			    }
+		    }
 	    }
+	return false;
     }
-
     /**
      * Check for a JQK in the selected cards.
      * @param selectedCards selects a subset of this board.  It is list
@@ -133,15 +132,15 @@ public class ElevensBoard extends Board {
 	
 	for(int x = 0; x < selectedCards.size() - 1; x++)
 	    {
-		if(selectedCards.get(x).rank().equals("jack"))
+		if(cardAt(selectedCards.get(x)).rank().equals("jack"))
 		    {
 			jackVal = true;
 		    }
-		if(selectedCards.get(x).rank().equals("queen"))
+		if(cardAt(selectedCards.get(x)).rank().equals("queen"))
 		    {
 			queenVal = true;
 		    }
-		if(selectedCards.get(x)..equals("king"))
+		if(cardAt(selectedCards.get(x)).equals("king"))
 		    {
 			kingVal = true;
 		    }
