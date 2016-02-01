@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 comp-sci
 All of the files we use and make in AP Comp-Sci should be here.  
 Push any missing ones.
@@ -14,3 +15,7 @@ sets - Program Sets, solutions to different problems in the textbook. : chX -> c
 
 
 Happy Hacking
+=======
+# comp-sci
+AP Comp Sci Java programs. 
+>>>>>>> 86e8659c150fd5ec44bdcd8fbd6c0add5a1cd841
