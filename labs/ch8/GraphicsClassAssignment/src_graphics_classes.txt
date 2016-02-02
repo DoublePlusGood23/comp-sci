@@ -1,3 +1,0 @@
-"C:\\Users\\KEnsminger\\Desktop\\Graphics Classes\\DrawPanel.java"
-"C:\\Users\\KEnsminger\\Desktop\\Graphics Classes\\MyLine.java"
-"C:\\Users\\KEnsminger\\Desktop\\Graphics Classes\\TestDraw.java"
